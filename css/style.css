@@ -347,6 +347,12 @@ img {
 	background-position:center center;
 }
 
+.hero-cursive {
+    font-family: 'Damion', cursive;
+	font-size: 103px;
+    color:#FFFFFF;
+}
+
 /* #About Section
 ================================================== */
 
