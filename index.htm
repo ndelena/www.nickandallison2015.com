@@ -13,7 +13,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>Nick & Allison - 2015</title>
+	<title>Nick & Allison - 8/22/2015</title>
 	<meta name="description" content="Wedding website for Nick and Allison">
 	<meta name="author" content="Nick DeLena">
 
@@ -104,7 +104,7 @@
             <div class="hero-holder grid-70 mobile-grid-100 tablet-grid-100">
             	<div class="hero-inner">
                     <span class="hero-description">The wedding website of Nick DeLena &amp; Allison Beaumier</span>
-                    <div class="hero-title-holder"><h1 class="hero-cursive">Nick &amp; Allison, 2015</h1></div>
+                    <div class="hero-title-holder"><h1 class="hero-cursive">Nick &amp; Allison, August 22, 2015</h1></div>
                     <span class="btn-holder"><a id="to-about-section" class="hero-btn">Hear Our Story</a></span>
                 </div>
             </div><!-- close hero-holder -->    													
@@ -178,8 +178,58 @@
             	<!-- parallax header -->
             	<div class="grid-70 prefix-15 mobile-grid-100 tablet-grid-100">
                     <header class="parallax-header">
-                        <h2 class="parallax-title">Quote</h2>
-                        <p class="parallax-slogan">Is there a quote we like that we could put here?</p>
+                        <h2 class="parallax-title">Countdown to the big day</h2>
+                        
+                        <SCRIPT TYPE="text/javascript" LANGUAGE="JavaScript">
+<!--
+
+dateFuture = new Date(2015,7,22,14,59,59);
+
+function GetCount(){
+
+        dateNow = new Date();                                                                        //grab current date
+        amount = dateFuture.getTime() - dateNow.getTime();                //calc milliseconds between dates
+        delete dateNow;
+
+        // time is already past
+        if(amount < 0){
+                document.getElementById('countbox').innerHTML="Now!";
+        }
+        // date is still good
+        else{
+                days=0;hours=0;mins=0;secs=0;out="";
+
+                amount = Math.floor(amount/1000);//kill the "milliseconds" so just secs
+
+                days=Math.floor(amount/86400);//days
+                amount=amount%86400;
+
+                hours=Math.floor(amount/3600);//hours
+                amount=amount%3600;
+
+                mins=Math.floor(amount/60);//minutes
+                amount=amount%60;
+
+                secs=Math.floor(amount);//seconds
+
+                if(days != 0){out += days +" day"+((days!=1)?"s":"")+", ";}
+                if(days != 0 || hours != 0){out += hours +" hour"+((hours!=1)?"s":"")+", ";}
+                if(days != 0 || hours != 0 || mins != 0){out += mins +" minute"+((mins!=1)?"s":"")+", ";}
+                out += secs +" seconds";
+                document.getElementById('countbox').innerHTML=out;
+
+                setTimeout("GetCount()", 1000);
+        }
+}
+
+window.onload=function(){GetCount();}//call when everything has loaded
+
+//-->
+</script>
+<div id="countbox"></div>
+
+                        
+                        
                     </header>
                 </div>
             	<!-- close parallax header -->
@@ -200,7 +250,7 @@
             <div class="grid-70 prefix-15 mobile-grid-100 tablet-grid-100">
                 <header class="section-header">
                     <h2 class="section-title"><span>Our Wedding Team</span></h2>
-                    <p class="section-slogan">We believe in a <strong>diverse</strong> range of personel to bring creative skills, thoughts, and <strong>ideas</strong> to the table.</p>
+                    <p class="section-slogan">Coming soon</p>
                 </header>
             </div>
             <!-- close section header -->
@@ -309,8 +359,8 @@
             <!-- parallax header -->
             <div class="grid-70 prefix-15 mobile-grid-100 tablet-grid-100">
                 <header class="parallax-header">
-                    <h2 class="parallax-title"><span>Some Fun Facts</span></h2>
-                    <p class="parallax-slogan">Each completed project makes us even more hungry, hungry for more designs, more code and at least some more twinkies. As a result we deliver a better web experience.</p>
+                    <h2 class="parallax-title"><span>Some Fun Facts About Us</span></h2>
+                    <p class="parallax-slogan">More soon.</p>
                 </header>
             </div>
             <!-- close parallax header -->
@@ -339,14 +389,14 @@
                 </div>
 			</div><!-- close counter box -->
             
-            <!-- counter box 4 -->
+            <!-- counter box 4 
 			<div class="grid-25 mobile-grid-100 tablet-grid-25">
             	<div class="counter-box counter" data-counter="2">
             		<span class="count">4</span>
                  	<h3 class="counter-details">Times we broke up</h3>
                 </div>
 			</div><!-- close counter box -->
-    
+    -->
     		</div><!-- close grid-100 -->
 		</div><!-- close grid container -->
 	</section><!-- close parallax banner 3-->
@@ -374,7 +424,7 @@
             <div class="grid-70 prefix-15 mobile-grid-100 tablet-grid-100">
             <header class="parallax-header">
             <h2 class="parallax-title">Registry</h2>
-            <p class="parallax-slogan">Our quality standards apply also in terms of service, technical expertise and advice. Our dedicated employees are happy to assist you with know-how and experience in your daily business.</p>
+            <p class="parallax-slogan">We are currently registered at Crate &amp; Barrel </p>
             </header>
             </div>
             <!-- close entry header -->
@@ -383,38 +433,13 @@
 			<div class="grid-33 mobile-grid-100 tablet-grid-100">
             	<div class="box-fade icon-box">
             	<div class="arrow-right"></div>
-				<i class="icon-time icon-4x service-icon"></i>
+				<i><img src="images/cnb.jpg"></i>
                 </div>
                 <div class="box-fade info"> 
-                <h3>Consulting</h3>
-				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</p>
+				<p>Link coming along shortly</p>
                </div>
 			</div><!-- close icon box -->
             
-            <!-- icon box 2 -->
-			<div class="grid-33 mobile-grid-100 tablet-grid-100">
-            	<div class="box-fade icon-box">
-            	<div class="arrow-right"></div>
-                <i class="icon-globe icon-4x service-icon"></i>
-                </div>
-                <div class="box-fade info"> 
-                <h3>Systems Integration</h3>
-				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</p>
-               </div>
-              
-			</div><!-- close icon box -->
-            
-            <!-- icon box 3 -->
-			<div class="grid-33 mobile-grid-100 tablet-grid-100">	
-                <div class="box-fade icon-box">
-            	<div class="arrow-right"></div>
-				<i class="icon-umbrella icon-4x service-icon"></i>
-                </div>
-                <div class="box-fade info"> 
-                <h3>Support</h3>
-				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</p>
-               </div>
-			</div><!-- close icon box -->
     
     </div><!-- close grid-100 -->
 		</div><!-- close grid container -->
@@ -470,7 +495,7 @@
             	<div class="portfolio-box">       
             	<figure class="portfolio-image"><img src="images/portfolio/thumb/p3.jpg" alt="portfolio image"></figure><!-- close portfolio image -->
                 <div class="portfolio-caption">
-                    <h3 class="portfolio-title">The Surprise<span class="portfolio-category">Allison was caught by surprise!</span></h3>
+                    <h3 class="portfolio-title">We celebrated<span class="portfolio-category">... after we celebrated!</span></h3>
                 </div><!-- close portfolio caption -->
                 </div>     
                 </a>          
@@ -482,7 +507,7 @@
             	<div class="portfolio-box">       
             	<figure class="portfolio-image"><img src="images/portfolio/thumb/p4.jpg" alt="portfolio image"></figure><!-- close portfolio image -->
                 <div class="portfolio-caption">
-                    <h3 class="portfolio-title">Celebrating<span class="portfolio-category">We celebrated, after we celebrated!</span></h3>
+                    <h3 class="portfolio-title">Allison climbs down<span class="portfolio-category">She climbs down an engaged woman</span></h3>
                 </div><!-- close portfolio caption -->
                 </div>  
                 </a>             
@@ -494,7 +519,7 @@
             	<div class="portfolio-box">       
             	<figure class="portfolio-image"><img src="images/portfolio/thumb/p5.jpg" alt="portfolio image"></figure><!-- close portfolio image -->
                 <div class="portfolio-caption">
-                    <h3 class="portfolio-title">Allison climbs down<span class="portfolio-category">She climbs down an engaged woman</span></h3>
+                    <h3 class="portfolio-title">And of course<span class="portfolio-category">We opened a nice bottle of tempranillo</span></h3>
                 </div><!-- close portfolio caption -->
                 </div>          
                 </a>     
@@ -506,7 +531,7 @@
             	<div class="portfolio-box">       
             	<figure class="portfolio-image"><img src="images/portfolio/thumb/p6.jpg" alt="portfolio image"></figure><!-- close portfolio image -->
                 <div class="portfolio-caption">
-                    <h3 class="portfolio-title">Cecilia<span class="portfolio-category">Photography</span></h3>
+                    <h3 class="portfolio-title">2009<span class="portfolio-category">When we first started dating</span></h3>
                 </div><!-- close portfolio caption -->
                 </div>    
                 </a>           
@@ -518,7 +543,7 @@
             	<div class="portfolio-box">       
             	<figure class="portfolio-image"><img src="images/portfolio/thumb/p7.jpg" alt="portfolio image"></figure><!-- close portfolio image -->
                 <div class="portfolio-caption">
-                    <h3 class="portfolio-title">Tree<span class="portfolio-category">Photography</span></h3>
+                    <h3 class="portfolio-title">2010<span class="portfolio-category">in Portugal</span></h3>
                 </div><!-- close portfolio caption -->
                 </div>  
                 </a>             
@@ -530,7 +555,7 @@
             	<div class="portfolio-box">       
             	<figure class="portfolio-image"><img src="images/portfolio/thumb/p8.jpg" alt="portfolio image"></figure><!-- close portfolio image -->
                 <div class="portfolio-caption">
-                    <h3 class="portfolio-title">Bridge<span class="portfolio-category">Photography</span></h3>
+                    <h3 class="portfolio-title">2011<span class="portfolio-category">At a friend's wedding</span></h3>
                 </div><!-- close portfolio caption -->
                 </div>  
                 </a>             
@@ -542,7 +567,7 @@
             	<div class="portfolio-box">       
             	<figure class="portfolio-image"><img src="images/portfolio/thumb/p9.jpg" alt="portfolio image"></figure><!-- close portfolio image -->
                 <div class="portfolio-caption">
-                    <h3 class="portfolio-title">Headphone<span class="portfolio-category">Photography</span></h3>
+                    <h3 class="portfolio-title">2012<span class="portfolio-category">At another wedding</span></h3>
                 </div><!-- close portfolio caption -->
                 </div>   
                 </a>            
@@ -562,8 +587,8 @@
             	<!-- parallax header -->
             	<div class="grid-70 prefix-15 mobile-grid-100 tablet-grid-100">
                     <header class="parallax-header">
-                    <h2 class="parallax-title"><span>Get Connected</span></h2>
-                    <p class="parallax-slogan">The <strong>NSA</strong> already takes care of our social media profiles, for everyone else who wants to get connected with us regularly , do not hesitate , we are waiting for <strong>you</strong>!</p>
+                    <h2 class="parallax-title"><span>More soon</span></h2>
+                    <p class="parallax-slogan">Check back again </p>
                     </header>
                 </div>
             	<!-- close parallax header -->
@@ -589,7 +614,8 @@
             <div class="grid-70 prefix-15 mobile-grid-100 tablet-grid-100">
                 <header class="section-header">
                     <h2 class="section-title"><span>Ceremony</span></h2>
-                    <p class="section-slogan">We don't know much yet.</p>
+                    <p class="section-slogan">Saturday, August 22, 2015</p>
+                    <p class="section-slogan">Whitney's Inn, Jackson, NH</p>
                 </header>
             </div>
             <!-- close section header -->
@@ -599,26 +625,15 @@
             <div class="grid-70 prefix-15 mobile-grid-100 tablet-grid-100">
             
             <div class="ut-testimonials">
-            	<div id="avatarSlider" class="ut-rotate-avatar">
-                	<ul class="slides">
-						<li>
-                        	<img src="images/member1.jpg" class="ut-quote-avatar" alt="avatar">
-                        </li>
-						<li>
-                        	<img src="images/member6.jpg" class="ut-quote-avatar" alt="avatar">
-                        </li>
-					</ul>
-           		</div><!-- close avatarSlider -->
                 
                 <div id="quoteSlider" class="ut-rotate-quote">
                 	<ul class="slides">
                         <li>
-                        	<span class="ut-quote-comment">Five stars for this theme. Awesome design and great, quick support.</span>
-							<h3 class="ut-quote-name">Jax Teller via Twitter</h3>    
+                            <img src="images/whitneysinn.jpg">
                         </li>
+
                         <li>
-                        	<span class="ut-quote-comment">Just a huge thanks to the United Themes team for being so helpful in their forums.</span>
-							<h3 class="ut-quote-name">Tara Knowles-Teller via Twitter</h3>     
+                        	<img src="images/whitneysinn03.jpg">   
                         </li>
                     </ul>
                 </div><!-- close quoteSlider -->    
@@ -631,56 +646,6 @@
      
     <div class="clear"></div>
     
-    <!-- client section -->
-	<section id="client-section" class="client-section content-section">
-    	
-		<div class="grid-container">
-        
-        <div class="client-holder grid-parent grid-100 tablet-grid-100 mobile-grid-100">
-        
-        <!-- client box -->
-        <div class="grid-20 tablet-grid-20 mobile-grid-50">
-        	<div class="client-logo">
-            	<a href="#"><img src="images/logo1.png" alt="client logo"></a>
-            </div>
-        </div><!-- close client box -->
-        
-         <!-- client box -->
-        <div class="grid-20 tablet-grid-20 mobile-grid-50">
-        	<div class="client-logo">
-            	<a href="#"><img src="images/logo2.png" alt="client logo"></a>
-            </div>
-        </div><!-- close client box -->
-        
-         <!-- client box -->
-        <div class="grid-20 tablet-grid-20 mobile-grid-50">
-        	<div class="client-logo">
-            	<a href="#"><img src="images/logo3.png" alt="client logo"></a>
-            </div>
-        </div><!-- close client box -->
-        
-         <!-- client box -->
-        <div class="grid-20 tablet-grid-20 mobile-grid-50">
-        	<div class="client-logo">
-            	<a href="#"><img src="images/logo4.png" alt="client logo"></a>
-            </div>
-        </div><!-- close client box -->
-        
-         <!-- client box -->
-        <div class="grid-20 tablet-grid-20 mobile-grid-50">
-        	<div class="client-logo">
-            	<a href="#"><img src="images/logo5.png" alt="client logo"></a>
-            </div>
-        </div><!-- close client box -->
-        
-        </div><!-- close client-holder -->		
-            
-		</div><!-- close container -->
-	</section><!-- close client section -->
-    
-    </div><!-- close nav-waypoint -->
-    
-    <div class="clear"></div>
     
      <!-- contact section -->
      <div class="nav-waypoint">
@@ -711,6 +676,7 @@
             	<ul class="icons-ul">
                 	<li><i class="icon-li icon-home"></i>26 Kimball Rd <br> West Newbury, <br>Massachusetts 01985</li>
                     <li><i class="icon-li icon-phone"></i>(617) 388-4500</li>
+                    <li><i class="icon-li icon-phone"></i>(413) 537-5844</li>
                     <li><i class="icon-li icon-envelope-alt"></i>wedding@nickandallison2015.com</li>
                     <li><i class="icon-li icon-globe"></i>www.nickandallison2015.com</li>
                 </ul>
@@ -766,7 +732,6 @@
     <a href="#top" class="toTop"><i class="icon-angle-up"></i></a>
 		<div class="grid-container">
 			<div class="grid-100 mobile-grid-100 tablet-grid-100">
-                <h3>We <i class="icon-heart"></i> your mom.</h3>
                 <span class="copyright">Powered by <a href="htt://www.unitedthemes.com" target="_blank">espresso</a></span>
          	</div>
 		</div><!-- close container -->
