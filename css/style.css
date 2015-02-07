@@ -403,6 +403,10 @@ img {
 	z-index:3;
 	position:relative;
 }
+
+.service-section a {
+    color:#FFFFFF;
+}
 .icon-box { 
 	position:relative;
 	margin-bottom:40px;
