@@ -746,6 +746,84 @@ img {
 .ut-testimonials:hover .ut-rotate-quote .flex-prev:hover { opacity: 1; }
 .ut-rotate-quote .flex-direction-nav .flex-disabled { opacity: 0!important; filter:alpha(opacity=0); cursor: default; }
 
+/* #Accomodations Section
+================================================== */
+
+.ut-accomodations {
+	position:relative;
+	overflow:hidden;
+}
+.js .ut-accomodations {
+	opacity:0;
+}
+.ut-quote-name {
+	margin:5px 0 0 0;
+	font-size:10px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+}
+.ut-quote-comment {
+	font-size:16px;
+	display:block;
+}
+.ut-rotate-avatar .slides > li,
+.ut-rotate-quote .slides > li {
+    display: none;
+    -webkit-backface-visibility: hidden;
+} 
+.ut-rotate-avatar,
+.ut-rotate-quote {
+    position: relative;
+    zoom: 1;
+}
+.ut-rotate-avatar .slides,
+.ut-rotate-quote .slides {
+    zoom: 1;
+}
+.ut-rotate-quote .flex-viewport {
+    max-height: 2000px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.ut-rotate-quote {
+	position:relative;
+	text-align:center;
+}
+.ut-rotate-avatar {
+	height: 200px;
+	margin: 0 auto 40px auto;
+	overflow: hidden;
+	width: 200px;
+}
+.ut-rotate-avatar .slides {
+	list-style:none;
+	margin: 0px !important;
+}
+.ut-rotate-avatar img {
+	border-radius: 50% 50% 50% 50%;
+	display: block;
+	width: 100%;
+}
+.ut-rotate-avatar ul.slides,
+.ut-rotate-quote ul.slides {
+	list-style:none;
+}
+.ut-rotate-quote .slides {
+	list-style:none;
+	margin:0px !important;
+}
+.ut-rotate-quote .flex-direction-nav {*height: 0; list-style:none;}
+.ut-rotate-quote .flex-direction-nav a  { display: block; text-indent:-9999px; width: 40px; height: 40px; margin: -110px 0 0; position: absolute; top: -50%; z-index: 10; overflow: hidden; opacity: 0; cursor: pointer; color: rgba(255,255,255,0.9); -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease; }
+.ut-rotate-quote .flex-direction-nav .flex-prev { left: -50px; background-image:url(../images/arrow-left-black.png); background-repeat:no-repeat; }
+.ut-rotate-quote .flex-direction-nav .flex-next { right: -50px; background-image:url(../images/arrow-right-black.png); background-repeat:no-repeat;  }
+.ut-accomodations:hover .ut-rotate-quote .flex-prev { opacity: 0.7; left: 10px; }
+.ut-accomodations:hover .ut-rotate-quote .flex-next { opacity: 0.7; right: 10px; }
+.ut-accomodations:hover .ut-rotate-quote .flex-next:hover, 
+.ut-accomodations:hover .ut-rotate-quote .flex-prev:hover { opacity: 1; }
+.ut-rotate-quote .flex-direction-nav .flex-disabled { opacity: 0!important; filter:alpha(opacity=0); cursor: default; }
+
 /* #Contact Section
 ================================================== */
 
